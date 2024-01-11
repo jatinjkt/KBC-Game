@@ -1,0 +1,78 @@
+name = input('what is yout name?')
+print("Good To Have You MR.",name,'welcome to kaun banega crorepati')
+print('here is your first question on the screen')
+
+questions =[['who won the all stage matches in world cup 2023 but lost in final?', 'Australia', 
+             'Pakistan','India','England',3],
+             [
+                 'what is the innaugral date of ram mandir', '22 jan', '24 feb', '1 march','1 jan',1
+             ],
+             [
+                 'Javascript can be used as?','frontend','backend','A and B both','Machine Learning',3
+             ],
+             [
+                 'What is the capital of France?','Berlin','Paris','Madrid','Rome',2
+             ],
+             [
+                 'Which planet is known as the "Red Planet"?','Venus','Mars','Jupiter','Saturn',2
+             ],
+             [
+                 'Who wrote the play Romeo and Juliet?','Charles Dickens','William Shakespeare','Jane Austen','Mark Twain',2
+             ],
+             [
+                 'What is the largest mammal on Earth?','Elephant','Blue Whale','Giraffe','Hippopotamus',2
+             ],
+             [
+                 'In what year did Christopher Columbus reach the Americas?','1492','1588','1776','1607',1
+             ],
+             [
+                 'Which element has the chemical symbol H?','Helium','Carbon','Hydrogen','oxygen',3
+             ],
+             [
+                 'What is the currency of Japan?','Yen','Won','Ringgit','Baht',1
+             ],
+             [
+                 'Who painted the Mona Lisa?','Vincent van Gogh','Pablo Picasso','Michelangelo','Leonardo da Vinci',4
+             ],
+             [
+                 'What is the capital of Australia?','Sydney','Melbourne','Canberra','Brisbane',3
+             ],
+             [
+                 'Which of the following is a primary color?','Green','Orange','Yellow','Purple',3
+             ],
+             [
+                 'What is the capital of Brazil?','Brasillia','Rio de Janerio','Sao Paulo','Buenos Aires',1
+             ],
+             [
+                 'Who is the author of the Harry Potter book series?','J.R.R. Tolkien','J.K. Rowling','George R.R Martin','Suzanne Collins',2
+             ],
+             ]
+levels = [1000,2000,3000,5000,10000,20000,40000,80000,160000,320000,640000,1250000,25000000,5000000,10000000]
+money = 0
+
+for i in range(0, len(questions)):
+    question = questions[i]
+    print(question[0])
+    
+    print(f'Question for Rs. {levels[i]}')
+    print(f'a. {question[1]}                b. {question[2]}')
+    print(f'c. {question[3]}                d. {question[4]} ')
+
+    reply = int(input('Enter your answer in (1-4) format'))
+            
+    if(reply == question[-1]):
+        print(f'\n\ncorrect answer, you have won Rs. {levels[i]}')
+
+        if i == 4:
+                    money = 100000
+        elif i == 9:
+                    money = 320000
+                    
+        elif i == 14:
+                money = 10000000
+
+    else: 
+        print('wrong Answer!!!')
+        break
+
+print('you are taking home this money: ',money)
