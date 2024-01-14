@@ -1,2 +1,1 @@
-# KBC-Game
-Hello its an KBC Game more good program then the basic one!
+Welcome to the KBC Game repository – a command-line based implementation of the iconic Indian television quiz show, "Kaun Banega Crorepati." If you've ever dreamt of sitting in the hot seat and answering challenging questions to win big, this game brings that experience to your fingertips!
